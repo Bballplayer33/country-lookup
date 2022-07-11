@@ -2,7 +2,24 @@ let searchBtn = document.getElementById("search-btn");
 let countryInput = document.getElementById("country-input");
 
 searchBtn.addEventListener("click", () => {
-    let countryName = countryInput.value;
+    let countryName = "India";
     let finalURL = `https://restcountries.com/v3.1/name/${countryName}?fullText=true`;
     console.log(finalURL);
+    fetch(finalURL)
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data[0]);
+        console.log(data[0].capital[0]);
+        console.log(data[0].flags.svg);
+        console.log(data[0].name.common);
+        console.log(data[0].continents[0]);
+        console.log(Object.keys(data[0].currencies));
+        console.log(data[0].currencies[Object.keys(data[0].currencies)].name); 
+        console.log(Object.values(data[0].langueges.toString().split(",").join(",")));
+    });
+
+    result.innerHTML = `
+        <img src= "${data[0].flags.svg}"
+    `
+
 });
