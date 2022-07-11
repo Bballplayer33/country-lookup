@@ -20,6 +20,8 @@ searchBtn.addEventListener("click", () => {
         result.innerHTML = `
         <img src= "${data[0].flags.svg}"
         class = "flag-img">
+        <h2>${data[0].name.common}</h2>
+        
     `;
         
     });
