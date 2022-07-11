@@ -38,7 +38,7 @@ body {
 
 .search-wrapper input {
     font-size: 1em;
-    padding: none;
+    padding: 0 0.62em;
     border: none;
     border-bottom: 2px solid lightblue;
     outline: none;
