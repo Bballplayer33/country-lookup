@@ -1,6 +1,6 @@
 # Country Lookup
 ## Description
-
+Lightweight app used to lookup a country giving details about inputed country.
 
 ## Table of Contents
 - [Wireframe](#wireframe)
@@ -26,7 +26,7 @@ Ukraine:<br>
 
 
 ## Instructions
-
+To search for a counrty enter the full name of counrty and click the search button, your country will pop up. Repeat to search for another country.
 
 
 ## Usage
@@ -35,6 +35,7 @@ Ukraine:<br>
 ## User Story
 
 ```
+As a User I would like to quickly look up a nation with a breif discription.
 
 ```
 ## Future Directions
